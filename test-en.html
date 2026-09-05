@@ -8,13 +8,13 @@
 		:root { color-scheme: light; }
 		* { box-sizing: border-box; }
 		body { margin: 0; font-family: Arial, sans-serif; line-height: 1.6; color: #243447; background: #f4f1ec; }
-		header { padding: 28px 20px 80px; text-align: center; color: white; background: linear-gradient(135deg, #19324d, #527da3); }
+		header { position: relative; padding: 76px 20px 80px; text-align: center; color: white; background: linear-gradient(135deg, #19324d, #527da3); }
 		header h1 { margin: 0 0 12px; font-size: clamp(2rem, 6vw, 4rem); }
 		header p { margin: 0; font-size: 1.2rem; }
 		nav { margin-top: 24px; }
 		nav a { display: inline-block; padding: 10px 18px; border: 1px solid rgba(255,255,255,.7); border-radius: 6px; color: white; text-decoration: none; }
 		nav a:hover { background: rgba(255,255,255,.15); }
-		.language-switcher { display: flex; justify-content: flex-end; gap: 8px; }
+		.language-switcher { position: absolute; top: 18px; right: 20px; display: flex; gap: 8px; z-index: 2; }
 		.language-switcher a { display: inline-grid; width: 42px; height: 42px; place-items: center; padding: 0; border: 2px solid rgba(255,255,255,.8); border-radius: 50%; font-size: 1.35rem; text-decoration: none; background: rgba(0,0,0,.15); }
 		.language-switcher a:hover, .language-switcher a:focus-visible { transform: scale(1.08); background: rgba(255,255,255,.2); }
 		main { max-width: 950px; margin: 0 auto; padding: 45px 20px; }
