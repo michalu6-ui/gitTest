@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Polish Landmarks - Warsaw and Krakow</title>
+	<style>
+		:root { color-scheme: light; --ink: #1d2a35; --muted: #687681; --paper: #f4f1ec; --white: #fff; --navy: #19324d; --brick: #5d2724; }
+		* { box-sizing: border-box; }
+		body { margin: 0; font-family: Arial, sans-serif; line-height: 1.6; color: var(--ink); background: var(--paper); }
+		header { padding: 28px 20px 88px; text-align: center; color: var(--white); background: linear-gradient(135deg, var(--navy), #527da3 58%, var(--brick)); }
+		header h1 { margin: 0 0 12px; font-size: clamp(2.2rem, 6vw, 4.5rem); }
+		header p { max-width: 620px; margin: 0 auto; font-size: 1.2rem; }
+		.language-switcher { display: flex; justify-content: flex-end; gap: 8px; max-width: 1120px; margin: 0 auto 24px; }
+		.language-switcher a { display: grid; width: 42px; height: 42px; place-items: center; border: 2px solid rgba(255,255,255,.8); border-radius: 50%; font-size: 1.35rem; text-decoration: none; background: rgba(0,0,0,.15); }
+		.language-switcher a:hover, .language-switcher a:focus-visible { transform: scale(1.08); background: rgba(255,255,255,.2); }
+		main { max-width: 1120px; margin: -42px auto 0; padding: 0 20px 48px; }
+		.destinations { display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 26px; }
+		.destination { overflow: hidden; background: var(--white); border-radius: 12px; box-shadow: 0 8px 24px rgba(31, 43, 52, .14); }
+		.destination img { display: block; width: 100%; height: 280px; object-fit: cover; }
+		.destination-content { padding: 24px; }
+		.destination h2 { margin: 0 0 6px; font-size: 1.8rem; }
+		.destination p { margin: 0 0 20px; color: var(--muted); }
+		.tabs { display: flex; flex-wrap: wrap; gap: 10px; }
+		.tabs a { display: inline-block; padding: 10px 14px; border: 1px solid currentColor; border-radius: 6px; color: inherit; font-weight: bold; text-decoration: none; }
+		.warsaw h2, .warsaw .tabs a { color: var(--navy); }
+		.krakow h2, .krakow .tabs a { color: var(--brick); }
+		.tabs a:hover, .tabs a:focus-visible { color: var(--white); }
+		.warsaw .tabs a:hover, .warsaw .tabs a:focus-visible { background: var(--navy); }
+		.krakow .tabs a:hover, .krakow .tabs a:focus-visible { background: var(--brick); }
+		footer { padding: 22px; text-align: center; color: var(--white); background: var(--ink); }
+	</style>
+</head>
+<body>
+	<header>
+		<div class="language-switcher" aria-label="Language selection">
+			<a href="index.html" aria-label="Polski" title="Polski">🇵🇱</a>
+			<a href="index-en.html" aria-label="English" title="English">🇬🇧</a>
+		</div>
+		<h1>Polish Landmarks</h1>
+		<p>Choose a city and discover its most recognisable landmark.</p>
+	</header>
+
+	<main>
+		<section class="destinations" aria-label="City selection">
+			<article class="destination warsaw">
+				<img src="https://images.unsplash.com/photo-1519197924294-4ba991a11128?auto=format&amp;fit=crop&amp;w=1200&amp;q=85" alt="Palace of Culture and Science in Warsaw">
+				<div class="destination-content">
+					<h2>Warsaw Landmarks</h2>
+					<p>The Palace of Culture and Science, one of the capital's most recognisable symbols.</p>
+					<nav class="tabs" aria-label="Warsaw">
+						<a href="test-en.html">Open page</a>
+					</nav>
+				</div>
+			</article>
+
+			<article class="destination krakow">
+				<img src="https://commons.wikimedia.org/wiki/Special:FilePath/Wawel_Royal_Castle_Krakow_Poland_by_blaat.jpg?width=1200" alt="Wawel Royal Castle in Krakow">
+				<div class="destination-content">
+					<h2>Krakow Landmarks</h2>
+					<p>Wawel, the historic hill and former residence of Polish monarchs.</p>
+					<nav class="tabs" aria-label="Krakow">
+						<a href="wawel-en.html">Open page</a>
+					</nav>
+				</div>
+			</article>
+		</section>
+	</main>
+
+	<footer>Warsaw and Krakow • Polish landmarks</footer>
+</body>
+</html>

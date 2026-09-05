@@ -62,10 +62,17 @@
 		.warsaw .tabs a:hover, .warsaw .tabs a:focus-visible { background: var(--navy); }
 		.krakow .tabs a:hover, .krakow .tabs a:focus-visible { background: var(--brick); }
 		footer { padding: 22px; text-align: center; color: var(--white); background: var(--ink); }
+		.language-switcher { display: flex; justify-content: flex-end; gap: 8px; max-width: 1120px; margin: 0 auto 24px; }
+		.language-switcher a { display: grid; width: 42px; height: 42px; place-items: center; border: 2px solid rgba(255,255,255,.8); border-radius: 50%; font-size: 1.35rem; text-decoration: none; background: rgba(0,0,0,.15); }
+		.language-switcher a:hover, .language-switcher a:focus-visible { transform: scale(1.08); background: rgba(255,255,255,.2); }
 	</style>
 </head>
 <body>
 	<header>
+		<div class="language-switcher" aria-label="Wybór języka">
+			<a href="index.html" aria-label="Polski" title="Polski">🇵🇱</a>
+			<a href="index-en.html" aria-label="English" title="English">🇬🇧</a>
+		</div>
 		<h1>Zabytki Polski</h1>
 		<p>Wybierz miasto i odkryj jego najbardziej rozpoznawalny landmark.</p>
 	</header>

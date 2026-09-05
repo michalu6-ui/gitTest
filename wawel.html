@@ -58,10 +58,17 @@
 		.info-list li { margin: 10px 0; }
 		.info-list a { color: #5d2724; font-weight: bold; }
 		footer { padding: 22px; text-align: center; color: #fff; background: #5d2724; }
+		.language-switcher { display: flex; justify-content: flex-end; gap: 8px; }
+		.language-switcher a { display: inline-grid; width: 42px; height: 42px; place-items: center; padding: 0; border: 2px solid rgba(255,255,255,.8); border-radius: 50%; font-size: 1.35rem; text-decoration: none; background: rgba(0,0,0,.15); }
+		.language-switcher a:hover, .language-switcher a:focus-visible { transform: scale(1.08); background: rgba(255,255,255,.2); }
 	</style>
 </head>
 <body>
 	<header>
+		<div class="language-switcher" aria-label="Wybór języka">
+			<a href="wawel.html" aria-label="Polski" title="Polski">🇵🇱</a>
+			<a href="wawel-en.html" aria-label="English" title="English">🇬🇧</a>
+		</div>
 		<h1>Wawel w Krakowie</h1>
 		<p>Serce polskiej historii nad Wisłą</p>
 		<nav aria-label="Główna nawigacja">

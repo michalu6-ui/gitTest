@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Palace of Culture and Science - Warsaw</title>
+	<style>
+		:root { color-scheme: light; }
+		* { box-sizing: border-box; }
+		body { margin: 0; font-family: Arial, sans-serif; line-height: 1.6; color: #243447; background: #f4f1ec; }
+		header { padding: 28px 20px 80px; text-align: center; color: white; background: linear-gradient(135deg, #19324d, #527da3); }
+		header h1 { margin: 0 0 12px; font-size: clamp(2rem, 6vw, 4rem); }
+		header p { margin: 0; font-size: 1.2rem; }
+		nav { margin-top: 24px; }
+		nav a { display: inline-block; padding: 10px 18px; border: 1px solid rgba(255,255,255,.7); border-radius: 6px; color: white; text-decoration: none; }
+		nav a:hover { background: rgba(255,255,255,.15); }
+		.language-switcher { display: flex; justify-content: flex-end; gap: 8px; }
+		.language-switcher a { display: inline-grid; width: 42px; height: 42px; place-items: center; padding: 0; border: 2px solid rgba(255,255,255,.8); border-radius: 50%; font-size: 1.35rem; text-decoration: none; background: rgba(0,0,0,.15); }
+		.language-switcher a:hover, .language-switcher a:focus-visible { transform: scale(1.08); background: rgba(255,255,255,.2); }
+		main { max-width: 950px; margin: 0 auto; padding: 45px 20px; }
+		.landmark-photo { margin: 0 0 28px; }
+		.landmark-photo img { display: block; width: 100%; height: 380px; border-radius: 12px; object-fit: cover; box-shadow: 0 4px 14px rgba(0,0,0,.12); }
+		.landmark-photo figcaption { margin-top: 8px; color: #5d6b78; font-size: .9rem; }
+		section { margin-bottom: 28px; padding: 28px; background: white; border-radius: 12px; box-shadow: 0 4px 14px rgba(0,0,0,.08); }
+		h2 { margin-top: 0; color: #19324d; }
+		.facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; }
+		.fact { padding: 16px; border-left: 4px solid #d49b45; background: #faf7f2; }
+		.fact strong { display: block; font-size: 1.4rem; color: #19324d; }
+		.info-list { margin: 0; padding-left: 22px; }
+		.info-list li { margin: 10px 0; }
+		.info-list a { color: #19324d; font-weight: bold; }
+		footer { padding: 22px; text-align: center; color: #fff; background: #19324d; }
+	</style>
+</head>
+<body>
+	<header>
+		<div class="language-switcher" aria-label="Language selection">
+			<a href="test.html" aria-label="Polski" title="Polski">🇵🇱</a>
+			<a href="test-en.html" aria-label="English" title="English">🇬🇧</a>
+		</div>
+		<h1>Palace of Culture and Science</h1>
+		<p>A symbol of Warsaw, science and culture</p>
+		<nav aria-label="Main navigation">
+			<a href="index-en.html">Back to homepage</a>
+			<a href="#transport">Transport and airports</a>
+			<a href="#hotels">Hotels</a>
+		</nav>
+	</header>
+
+	<main>
+		<figure class="landmark-photo">
+			<img src="https://images.unsplash.com/photo-1519197924294-4ba991a11128?auto=format&amp;fit=crop&amp;w=1400&amp;q=85" alt="Palace of Culture and Science in Warsaw">
+			<figcaption>The Palace of Culture and Science rising above central Warsaw.</figcaption>
+		</figure>
+
+		<section><p>The Palace of Culture and Science is one of Warsaw's most recognisable buildings. Completed in 1955, it remains an important centre for culture, science, business and entertainment.</p></section>
+
+		<section>
+			<h2>Key facts</h2>
+			<div class="facts">
+				<div class="fact"><strong>237 m</strong> height including the spire</div>
+				<div class="fact"><strong>1955</strong> year completed</div>
+				<div class="fact"><strong>30th floor</strong> viewing terrace</div>
+			</div>
+		</section>
+
+		<section><h2>What is worth seeing?</h2><p>The palace houses theatres, cinemas, museums, conference rooms and concert halls. Its viewing terrace offers a panorama of Warsaw, while exhibitions, concerts and educational events take place throughout the year.</p></section>
+
+		<section id="transport">
+			<h2>Public transport</h2>
+			<ul class="info-list">
+				<li><strong>Centrum Metro station</strong> - the most convenient connection from many districts, followed by a short walk.</li>
+				<li><strong>Warszawa Centralna railway station</strong> - trams and buses stop nearby, just a few minutes from the palace.</li>
+				<li><strong>Centrum stop</strong> - a major tram and bus interchange by Dmowskiego roundabout.</li>
+				<li><a href="https://www.google.com/maps/dir/?api=1&amp;destination=Pa%C5%82ac+Kultury+i+Nauki,+Warszawa&amp;travelmode=transit" target="_blank" rel="noopener noreferrer">Plan a public transport route in Google Maps</a></li>
+			</ul>
+		</section>
+
+		<section><h2>Getting here from Warsaw Modlin Airport</h2><ul class="info-list"><li>The airport shuttle bus connects to Modlin station, where trains run to Warsaw. Direct buses to central Warsaw are also available.</li><li><a href="https://www.google.com/maps/dir/?api=1&amp;origin=Port+Lotniczy+Warszawa-Modlin&amp;destination=Pa%C5%82ac+Kultury+i+Nauki,+Warszawa&amp;travelmode=transit" target="_blank" rel="noopener noreferrer">Route from Warsaw Modlin Airport in Google Maps</a></li></ul></section>
+
+		<section><h2>Getting here from Warsaw Chopin Airport</h2><ul class="info-list"><li>SKM trains S2/S30 and Koleje Mazowieckie trains connect the airport with the city centre. Get off at Warszawa Centralna or Warszawa Śródmieście and walk to the palace.</li><li><a href="https://www.google.com/maps/dir/?api=1&amp;origin=Lotnisko+Chopina,+Warszawa&amp;destination=Pa%C5%82ac+Kultury+i+Nauki,+Warszawa&amp;travelmode=transit" target="_blank" rel="noopener noreferrer">Route from Warsaw Chopin Airport in Google Maps</a></li></ul></section>
+
+		<section id="hotels"><h2>Hotels near Warsaw Modlin Airport</h2><p>Ratings and prices are updated in Google Maps. The listed properties are approximately within 5 km of the airport or Modlin station.</p><ul class="info-list"><li><a href="https://www.google.com/maps/search/?api=1&amp;query=Hotel+Royal+Modlin" target="_blank" rel="noopener noreferrer">Hotel Royal Modlin</a> - near Modlin Fortress.</li><li><a href="https://www.google.com/maps/search/?api=1&amp;query=Hotel+Soko%C5%82owska+Nowy+Dw%C3%B3r+Mazowiecki" target="_blank" rel="noopener noreferrer">Hotel Sokołowska</a> - close to Modlin station.</li><li><a href="https://www.google.com/maps/search/?api=1&amp;query=hotels+near+Warsaw+Modlin+Airport" target="_blank" rel="noopener noreferrer">See hotels near Modlin Airport in Google Maps</a></li></ul></section>
+
+		<section><h2>Hotels near Warsaw Chopin Airport</h2><p>Ratings and prices are updated in Google Maps. These properties are approximately within 5 km of Chopin Airport.</p><ul class="info-list"><li><a href="https://www.google.com/maps/search/?api=1&amp;query=Renaissance+Warsaw+Airport+Hotel" target="_blank" rel="noopener noreferrer">Renaissance Warsaw Airport Hotel</a> - directly beside the terminal.</li><li><a href="https://www.google.com/maps/search/?api=1&amp;query=Courtyard+by+Marriott+Warsaw+Airport" target="_blank" rel="noopener noreferrer">Courtyard by Marriott Warsaw Airport</a> - an airport hotel.</li><li><a href="https://www.google.com/maps/search/?api=1&amp;query=Hampton+by+Hilton+Warsaw+Airport" target="_blank" rel="noopener noreferrer">Hampton by Hilton Warsaw Airport</a> - convenient transfer to the terminal.</li><li><a href="https://www.google.com/maps/search/?api=1&amp;query=hotels+near+Warsaw+Chopin+Airport" target="_blank" rel="noopener noreferrer">See hotels near Chopin Airport in Google Maps</a></li></ul></section>
+	</main>
+	<footer>Palace of Culture and Science • Warsaw</footer>
+</body>
+</html>
