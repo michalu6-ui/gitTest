@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Zabytki Polski - Warszawa i Kraków</title>
+	<style>
+		:root {
+			color-scheme: light;
+			--ink: #1d2a35;
+			--muted: #687681;
+			--paper: #f4f1ec;
+			--white: #fff;
+			--navy: #19324d;
+			--brick: #5d2724;
+			--gold: #d49b45;
+		}
+		* { box-sizing: border-box; }
+		body {
+			margin: 0;
+			font-family: Arial, sans-serif;
+			line-height: 1.6;
+			color: var(--ink);
+			background: var(--paper);
+		}
+		header {
+			padding: 76px 20px 88px;
+			text-align: center;
+			color: var(--white);
+			background: linear-gradient(135deg, var(--navy), #527da3 58%, var(--brick));
+		}
+		header h1 { margin: 0 0 12px; font-size: clamp(2.2rem, 6vw, 4.5rem); }
+		header p { max-width: 620px; margin: 0 auto; font-size: 1.2rem; }
+		main { max-width: 1120px; margin: -42px auto 0; padding: 0 20px 48px; }
+		.destinations {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+			gap: 26px;
+		}
+		.destination {
+			overflow: hidden;
+			background: var(--white);
+			border-radius: 12px;
+			box-shadow: 0 8px 24px rgba(31, 43, 52, .14);
+		}
+		.destination img { display: block; width: 100%; height: 280px; object-fit: cover; }
+		.destination-content { padding: 24px; }
+		.destination h2 { margin: 0 0 6px; font-size: 1.8rem; }
+		.destination p { margin: 0 0 20px; color: var(--muted); }
+		.tabs { display: flex; flex-wrap: wrap; gap: 10px; }
+		.tabs a {
+			display: inline-block;
+			padding: 10px 14px;
+			border: 1px solid currentColor;
+			border-radius: 6px;
+			font-weight: bold;
+			text-decoration: none;
+		}
+		.warsaw h2, .warsaw .tabs a { color: var(--navy); }
+		.krakow h2, .krakow .tabs a { color: var(--brick); }
+		.tabs a:hover, .tabs a:focus-visible { color: var(--white); }
+		.warsaw .tabs a:hover, .warsaw .tabs a:focus-visible { background: var(--navy); }
+		.krakow .tabs a:hover, .krakow .tabs a:focus-visible { background: var(--brick); }
+		footer { padding: 22px; text-align: center; color: var(--white); background: var(--ink); }
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Zabytki Polski</h1>
+		<p>Wybierz miasto i odkryj jego najbardziej rozpoznawalny landmark.</p>
+	</header>
+
+	<main>
+		<section class="destinations" aria-label="Wybór miasta">
+			<article class="destination warsaw">
+				<img src="https://images.unsplash.com/photo-1519197924294-4ba991a11128?auto=format&amp;fit=crop&amp;w=1200&amp;q=85" alt="Pałac Kultury i Nauki w Warszawie">
+				<div class="destination-content">
+					<h2>Zabytki Warszawy</h2>
+					<p>Pałac Kultury i Nauki, jeden z najbardziej rozpoznawalnych symboli stolicy.</p>
+					<nav class="tabs" aria-label="Warszawa">
+						<a href="test.html">Otwórz stronę</a>
+					</nav>
+				</div>
+			</article>
+
+			<article class="destination krakow">
+				<img src="https://commons.wikimedia.org/wiki/Special:FilePath/Wawel_Royal_Castle_Krakow_Poland_by_blaat.jpg?width=1200" alt="Zamek Królewski na Wawelu w Krakowie">
+				<div class="destination-content">
+					<h2>Zabytki Krakowa</h2>
+					<p>Wawel, historyczne wzgórze i dawna siedziba polskich władców.</p>
+					<nav class="tabs" aria-label="Kraków">
+						<a href="wawel.html">Otwórz stronę</a>
+					</nav>
+				</div>
+			</article>
+		</section>
+	</main>
+
+	<footer>Warszawa i Kraków • polskie zabytki</footer>
+</body>
+</html>
