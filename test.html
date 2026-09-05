@@ -60,15 +60,18 @@
 		.info-list a { color: #19324d; font-weight: bold; }
 		footer { padding: 22px; text-align: center; color: #fff; background: #19324d; }
 		.language-switcher { position: absolute; top: 18px; right: 20px; display: flex; gap: 8px; z-index: 2; }
-		.language-switcher a { display: inline-grid; width: 42px; height: 42px; place-items: center; padding: 0; border: 2px solid rgba(255,255,255,.8); border-radius: 50%; font-size: 1.35rem; text-decoration: none; background: rgba(0,0,0,.15); }
+		.language-switcher a { display: inline-grid; width: 42px; height: 42px; place-items: center; padding: 0; border: 2px solid rgba(255,255,255,.8); border-radius: 50%; text-decoration: none; background: rgba(0,0,0,.15); }
+		.flag-icon { display: block; width: 24px; height: 24px; border-radius: 50%; box-shadow: 0 0 0 1px rgba(0,0,0,.18); }
+		.flag-pl { background: linear-gradient(to bottom, #fff 0 50%, #dc143c 50% 100%); }
+		.flag-uk { background: linear-gradient(90deg, transparent 42%, #fff 42% 58%, transparent 58%), linear-gradient(0deg, transparent 42%, #fff 42% 58%, transparent 58%), linear-gradient(90deg, transparent 47%, #cf142b 47% 53%, transparent 53%), linear-gradient(0deg, transparent 47%, #cf142b 47% 53%, transparent 53%), linear-gradient(45deg, transparent 43%, #fff 43% 50%, #cf142b 50% 55%, transparent 55%), linear-gradient(-45deg, transparent 43%, #fff 43% 50%, #cf142b 50% 55%, transparent 55%), #00247d; }
 		.language-switcher a:hover, .language-switcher a:focus-visible { transform: scale(1.08); background: rgba(255,255,255,.2); }
 	</style>
 </head>
 <body>
 	<header>
 		<div class="language-switcher" aria-label="Wybór języka">
-			<a href="test.html" aria-label="Polski" title="Polski">🇵🇱</a>
-			<a href="test-en.html" aria-label="English" title="English">🇬🇧</a>
+			<a href="test.html" aria-label="Polski" title="Polski"><span class="flag-icon flag-pl" aria-hidden="true"></span></a>
+			<a href="test-en.html" aria-label="English" title="English"><span class="flag-icon flag-uk" aria-hidden="true"></span></a>
 		</div>
 		<h1>Pałac Kultury i Nauki</h1>
 		<p>Symbol Warszawy, nauki i kultury</p>

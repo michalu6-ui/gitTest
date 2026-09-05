@@ -15,7 +15,10 @@
 		nav a { display: inline-block; padding: 10px 18px; border: 1px solid rgba(255,255,255,.7); border-radius: 6px; color: white; text-decoration: none; }
 		nav a:hover { background: rgba(255,255,255,.15); }
 		.language-switcher { position: absolute; top: 18px; right: 20px; display: flex; gap: 8px; z-index: 2; }
-		.language-switcher a { display: inline-grid; width: 42px; height: 42px; place-items: center; padding: 0; border: 2px solid rgba(255,255,255,.8); border-radius: 50%; font-size: 1.35rem; text-decoration: none; background: rgba(0,0,0,.15); }
+		.language-switcher a { display: inline-grid; width: 42px; height: 42px; place-items: center; padding: 0; border: 2px solid rgba(255,255,255,.8); border-radius: 50%; text-decoration: none; background: rgba(0,0,0,.15); }
+		.flag-icon { display: block; width: 24px; height: 24px; border-radius: 50%; box-shadow: 0 0 0 1px rgba(0,0,0,.18); }
+		.flag-pl { background: linear-gradient(to bottom, #fff 0 50%, #dc143c 50% 100%); }
+		.flag-uk { background: linear-gradient(90deg, transparent 42%, #fff 42% 58%, transparent 58%), linear-gradient(0deg, transparent 42%, #fff 42% 58%, transparent 58%), linear-gradient(90deg, transparent 47%, #cf142b 47% 53%, transparent 53%), linear-gradient(0deg, transparent 47%, #cf142b 47% 53%, transparent 53%), linear-gradient(45deg, transparent 43%, #fff 43% 50%, #cf142b 50% 55%, transparent 55%), linear-gradient(-45deg, transparent 43%, #fff 43% 50%, #cf142b 50% 55%, transparent 55%), #00247d; }
 		.language-switcher a:hover, .language-switcher a:focus-visible { transform: scale(1.08); background: rgba(255,255,255,.2); }
 		main { max-width: 950px; margin: 0 auto; padding: 45px 20px; }
 		.landmark-photo { margin: 0 0 28px; }
@@ -35,8 +38,8 @@
 <body>
 	<header>
 		<div class="language-switcher" aria-label="Language selection">
-			<a href="wawel.html" aria-label="Polski" title="Polski">🇵🇱</a>
-			<a href="wawel-en.html" aria-label="English" title="English">🇬🇧</a>
+			<a href="wawel.html" aria-label="Polski" title="Polski"><span class="flag-icon flag-pl" aria-hidden="true"></span></a>
+			<a href="wawel-en.html" aria-label="English" title="English"><span class="flag-icon flag-uk" aria-hidden="true"></span></a>
 		</div>
 		<h1>Wawel in Krakow</h1>
 		<p>The heart of Polish history on the Vistula River</p>
