@@ -33,6 +33,16 @@
 		}
 		nav a:hover { background: rgba(255, 255, 255, .15); }
 		main { max-width: 950px; margin: 0 auto; padding: 45px 20px; }
+		.landmark-photo { margin: 0 0 28px; }
+		.landmark-photo img {
+			display: block;
+			width: 100%;
+			height: 380px;
+			border-radius: 12px;
+			object-fit: cover;
+			box-shadow: 0 4px 14px rgba(0,0,0,.12);
+		}
+		.landmark-photo figcaption { margin-top: 8px; color: #5d6b78; font-size: .9rem; }
 		section {
 			margin-bottom: 28px;
 			padding: 28px;
@@ -57,6 +67,11 @@
 	</header>
 
 	<main>
+		<figure class="landmark-photo">
+			<img src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&amp;fit=crop&amp;w=1400&amp;q=85" alt="Wawel i zamek królewski w Krakowie">
+			<figcaption>Wzgórze wawelskie i Zamek Królewski nad Wisłą.</figcaption>
+		</figure>
+
 		<section>
 			<p>Wawel to historyczne wzgórze położone nad Wisłą w centrum Krakowa. Przez wiele stuleci był siedzibą polskich władców i ważnym ośrodkiem życia politycznego, religijnego oraz kulturalnego kraju.</p>
 		</section>
