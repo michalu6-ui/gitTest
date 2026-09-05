@@ -1,10 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Krakow Landmarks - Wawel</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Krakow</title>
 	<style>
-		:root { color-scheme:light; --ink:#243447; --brick:#5d2724; --paper:#f4f1ec; --white:#fff; } * { box-sizing:border-box; } body { margin:0; font-family:Arial,sans-serif; line-height:1.6; color:var(--ink); background:var(--paper); } header { position:relative; padding:76px 20px 90px; text-align:center; color:var(--white); background:linear-gradient(135deg,#5d2724,#b9794d); } header h1 { margin:0 0 12px; font-size:clamp(2.3rem,6vw,4.8rem); } header p { margin:0 auto; max-width:650px; font-size:1.2rem; } nav { margin-top:26px; } nav a,.language-switcher a { color:var(--white); text-decoration:none; } nav a { display:inline-block; margin:5px; padding:10px 18px; border:1px solid rgba(255,255,255,.75); border-radius:6px; } nav a:hover { background:rgba(255,255,255,.15); } .language-switcher { position:absolute; top:18px; right:20px; display:flex; gap:8px; } .language-switcher a { display:grid; width:42px; height:42px; place-items:center; border:2px solid rgba(255,255,255,.8); border-radius:50%; background:rgba(0,0,0,.15); } .flag-icon { display:block; width:24px; height:24px; border-radius:50%; box-shadow:0 0 0 1px rgba(0,0,0,.18); } .flag-pl { background:linear-gradient(to bottom,#fff 0 50%,#dc143c 50% 100%); } .flag-uk { background:linear-gradient(90deg,transparent 42%,#fff 42% 58%,transparent 58%),linear-gradient(0deg,transparent 42%,#fff 42% 58%,transparent 58%),linear-gradient(90deg,transparent 47%,#cf142b 47% 53%,transparent 53%),linear-gradient(0deg,transparent 47%,#cf142b 47% 53%,transparent 53%),#00247d; } main { max-width:1000px; margin:-44px auto 0; padding:0 20px 50px; } .hero-card,section { padding:30px; background:var(--white); border-radius:12px; box-shadow:0 8px 24px rgba(31,43,52,.13); } .hero-card { display:grid; grid-template-columns:1.1fr 1fr; gap:28px; align-items:center; } .hero-card img { width:100%; height:300px; object-fit:cover; border-radius:8px; } h2 { margin-top:0; color:var(--brick); } .button { display:inline-block; padding:12px 18px; border-radius:6px; color:var(--white); background:var(--brick); text-decoration:none; font-weight:bold; } section { margin-top:28px; } footer { padding:22px; text-align:center; color:var(--white); background:var(--brick); } @media (max-width:700px) { .hero-card { grid-template-columns:1fr; } }
+		:root { color-scheme: light; }
+		* { box-sizing: border-box; }
+		body { margin: 0; font-family: Arial, sans-serif; line-height: 1.6; color: #243447; background: #f4f1ec; }
+		header { position: relative; padding: 76px 20px 90px; text-align: center; color: white; background: linear-gradient(135deg, #5d2724, #b9794d); }
+		header h1 { margin: 0 0 12px; font-size: clamp(2.3rem, 6vw, 4.8rem); }
+		header p { margin: 0 auto; max-width: 650px; font-size: 1.2rem; }
+		nav { margin-top: 26px; }
+		nav a { display: inline-block; margin: 5px; padding: 10px 18px; border: 1px solid rgba(255,255,255,.75); border-radius: 6px; color: white; text-decoration: none; }
+		nav a:hover { background: rgba(255,255,255,.15); }
+		.language-switcher { position: absolute; top: 18px; right: 20px; display: flex; gap: 8px; }
+		.language-switcher a { display: grid; width: 42px; height: 42px; place-items: center; border: 2px solid rgba(255,255,255,.8); border-radius: 50%; background: rgba(0,0,0,.15); }
+		.flag-icon { display: block; width: 24px; height: 24px; border-radius: 50%; }
+		.flag-pl { background: linear-gradient(to bottom, #fff 0 50%, #dc143c 50% 100%); }
+		.flag-uk { background: #00247d; box-shadow: inset 0 0 0 6px #cf142b; }
+		main { max-width: 1000px; margin: -44px auto 0; padding: 0 20px 50px; }
+		.hero-card, section { padding: 30px; background: white; border-radius: 12px; box-shadow: 0 8px 24px rgba(31,43,52,.13); }
+		.hero-card { display: grid; grid-template-columns: 1.1fr 1fr; gap: 28px; align-items: center; }
+		.hero-card img { width: 100%; height: 300px; object-fit: cover; border-radius: 8px; }
+		h2 { margin-top: 0; color: #5d2724; }
+		.button { display: inline-block; padding: 12px 18px; border-radius: 6px; color: white; background: #5d2724; text-decoration: none; font-weight: bold; }
+		section { margin-top: 28px; }
+		footer { padding: 22px; text-align: center; color: white; background: #5d2724; }
+		@media (max-width: 700px) { .hero-card { grid-template-columns: 1fr; } }
 	</style>
 </head>
-<body><header><div class="language-switcher" aria-label="Language selection"><a href="Krakow.html" aria-label="Polski" title="Polski"><span class="flag-icon flag-pl"></span></a><a href="Krakow-en.html" aria-label="English" title="English"><span class="flag-icon flag-uk"></span></a></div><h1>Krakow Landmarks</h1><p>A city of royal history, art and a unique atmosphere.</p><nav aria-label="Main navigation"><a href="index-en.html">Back to homepage</a></nav></header><main><section class="hero-card"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Wawel_Royal_Castle_Krakow_Poland_by_blaat.jpg?width=1200" alt="Wawel Royal Castle in Krakow"><div><h2>Wawel</h2><p>The historic hill on the Vistula, former residence of Polish monarchs and one of Krakow's most important symbols. Visit the castle, cathedral and Royal Tombs.</p><a class="button" href="wawel-en.html">Open the Wawel page</a></div></section><section><h2>Krakow in brief</h2><p>The Old Town, Main Market Square, Kazimierz and Wawel form a remarkable walking route. Krakow lets visitors discover Polish history at almost every turn.</p></section></main><footer>Krakow • Wawel</footer></body>
+<body>
+	<header>
+		<div class="language-switcher" aria-label="Language selection"><a href="Kraków.html" aria-label="Polski" title="Polski"><span class="flag-icon flag-pl"></span></a><a href="Krakow-en.html" aria-label="English" title="English"><span class="flag-icon flag-uk"></span></a></div>
+		<h1>Krakow</h1>
+		<p>A city of royal history, art and a unique atmosphere.</p>
+		<nav aria-label="Main navigation"><a href="index-en.html">Back to homepage</a></nav>
+	</header>
+	<main>
+		<section class="hero-card"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Wawel_Royal_Castle_Krakow_Poland_by_blaat.jpg?width=1200" alt="Wawel Royal Castle in Krakow"><div><h2>Krakow Culture</h2><p>Discover Krakow's most important cultural and royal heritage sites.</p><a class="button" href="kultura-Krakow-en.html">Open Culture</a></div></section>
+		<section><h2>Krakow in brief</h2><p>The Old Town, Main Market Square, Kazimierz and Wawel form a remarkable walking route.</p></section>
+	</main>
+	<footer>Krakow • Culture</footer>
+</body>
 </html>
