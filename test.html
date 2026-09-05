@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pałac Kultury i Nauki</title>
+	<style>
+		:root { color-scheme: light; }
+		* { box-sizing: border-box; }
+		body {
+			margin: 0;
+			font-family: Arial, sans-serif;
+			line-height: 1.6;
+			color: #243447;
+			background: #f4f1ec;
+		}
+		header {
+			padding: 80px 20px;
+			text-align: center;
+			color: white;
+			background: linear-gradient(135deg, #19324d, #527da3);
+		}
+		header h1 { margin: 0 0 12px; font-size: clamp(2rem, 6vw, 4rem); }
+		header p { margin: 0; font-size: 1.2rem; }
+		main { max-width: 950px; margin: 0 auto; padding: 45px 20px; }
+		section {
+			margin-bottom: 28px;
+			padding: 28px;
+			background: white;
+			border-radius: 12px;
+			box-shadow: 0 4px 14px rgba(0,0,0,.08);
+		}
+		h2 { margin-top: 0; color: #19324d; }
+		.facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; }
+		.fact { padding: 16px; border-left: 4px solid #d49b45; background: #faf7f2; }
+		.fact strong { display: block; font-size: 1.4rem; color: #19324d; }
+		footer { padding: 22px; text-align: center; color: #fff; background: #19324d; }
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Pałac Kultury i Nauki</h1>
+		<p>Symbol Warszawy, nauki i kultury</p>
+	</header>
+
+	<main>
+		<section>
+			<h2>O budynku</h2>
+			<p>Pałac Kultury i Nauki (PKiN) to jeden z najbardziej rozpoznawalnych budynków Warszawy. Został ukończony w 1955 roku i do dziś pełni funkcję ważnego centrum kulturalnego, naukowego oraz biznesowego.</p>
+		</section>
+
+		<section>
+			<h2>Najważniejsze informacje</h2>
+			<div class="facts">
+				<div class="fact"><strong>237 m</strong> wysokości wraz z iglicą</div>
+				<div class="fact"><strong>1955</strong> rok ukończenia</div>
+				<div class="fact"><strong>30. piętro</strong> taras widokowy</div>
+			</div>
+		</section>
+
+		<section>
+			<h2>Co warto zobaczyć?</h2>
+			<p>W pałacu znajdują się teatry, kina, muzea, sale konferencyjne i koncertowe. Z tarasu widokowego można podziwiać panoramę Warszawy, a w jego wnętrzach regularnie odbywają się wystawy, koncerty i wydarzenia edukacyjne.</p>
+		</section>
+	</main>
+
+	<footer>Pałac Kultury i Nauki • Warszawa</footer>
+</body>
+</html>
