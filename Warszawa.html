@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Zabytki Warszawy - Pałac Kultury i Nauki</title>
+	<style>
+		:root { color-scheme: light; --ink: #243447; --navy: #19324d; --paper: #f4f1ec; --white: #fff; }
+		* { box-sizing: border-box; }
+		body { margin: 0; font-family: Arial, sans-serif; line-height: 1.6; color: var(--ink); background: var(--paper); }
+		header { position: relative; padding: 76px 20px 90px; text-align: center; color: var(--white); background: linear-gradient(135deg, #19324d, #527da3); }
+		header h1 { margin: 0 0 12px; font-size: clamp(2.3rem, 6vw, 4.8rem); }
+		header p { margin: 0 auto; max-width: 650px; font-size: 1.2rem; }
+		nav { margin-top: 26px; }
+		nav a, .language-switcher a { color: var(--white); text-decoration: none; }
+		nav a { display: inline-block; margin: 5px; padding: 10px 18px; border: 1px solid rgba(255,255,255,.75); border-radius: 6px; }
+		nav a:hover { background: rgba(255,255,255,.15); }
+		.language-switcher { position: absolute; top: 18px; right: 20px; display: flex; gap: 8px; }
+		.language-switcher a { display: grid; width: 42px; height: 42px; place-items: center; border: 2px solid rgba(255,255,255,.8); border-radius: 50%; background: rgba(0,0,0,.15); }
+		.flag-icon { display: block; width: 24px; height: 24px; border-radius: 50%; box-shadow: 0 0 0 1px rgba(0,0,0,.18); }
+		.flag-pl { background: linear-gradient(to bottom, #fff 0 50%, #dc143c 50% 100%); }
+		.flag-uk { background: linear-gradient(90deg, transparent 42%, #fff 42% 58%, transparent 58%), linear-gradient(0deg, transparent 42%, #fff 42% 58%, transparent 58%), linear-gradient(90deg, transparent 47%, #cf142b 47% 53%, transparent 53%), linear-gradient(0deg, transparent 47%, #cf142b 47% 53%, transparent 53%), #00247d; }
+		main { max-width: 1000px; margin: -44px auto 0; padding: 0 20px 50px; }
+		.hero-card, section { padding: 30px; background: var(--white); border-radius: 12px; box-shadow: 0 8px 24px rgba(31,43,52,.13); }
+		.hero-card { display: grid; grid-template-columns: 1.1fr 1fr; gap: 28px; align-items: center; }
+		.hero-card img { width: 100%; height: 300px; object-fit: cover; border-radius: 8px; }
+		h2 { margin-top: 0; color: var(--navy); }
+		.button { display: inline-block; padding: 12px 18px; border-radius: 6px; color: var(--white); background: var(--navy); text-decoration: none; font-weight: bold; }
+		.button:hover { background: #2d5478; }
+		section { margin-top: 28px; }
+		footer { padding: 22px; text-align: center; color: var(--white); background: var(--navy); }
+		@media (max-width: 700px) { .hero-card { grid-template-columns: 1fr; } }
+	</style>
+</head>
+<body>
+	<header>
+		<div class="language-switcher" aria-label="Wybór języka"><a href="Warszawa.html" aria-label="Polski" title="Polski"><span class="flag-icon flag-pl"></span></a><a href="Warsaw-en.html" aria-label="English" title="English"><span class="flag-icon flag-uk"></span></a></div>
+		<h1>Zabytki Warszawy</h1>
+		<p>Miasto historii, kultury i nowoczesnej energii. Poznaj najważniejszy symbol stolicy.</p>
+		<nav aria-label="Główna nawigacja"><a href="index.html">Wróć do strony głównej</a></nav>
+	</header>
+	<main>
+		<section class="hero-card">
+			<img src="https://images.unsplash.com/photo-1519197924294-4ba991a11128?auto=format&amp;fit=crop&amp;w=1200&amp;q=85" alt="Pałac Kultury i Nauki w Warszawie">
+			<div><h2>Pałac Kultury i Nauki</h2><p>Najbardziej rozpoznawalny punkt panoramy Warszawy. W pałacu działają teatry, kina, muzea i sale koncertowe, a z tarasu widokowego można zobaczyć centrum miasta.</p><a class="button" href="test.html">Przejdź do strony PKiN</a></div>
+		</section>
+		<section><h2>Warszawa w skrócie</h2><p>Stolica łączy odbudowane zabytki Starego Miasta, królewskie rezydencje, zielone parki oraz nowoczesne centrum. PKiN jest dobrym punktem startowym do dalszego zwiedzania miasta.</p></section>
+	</main>
+	<footer>Warszawa • Pałac Kultury i Nauki</footer>
+</body>
+</html>
